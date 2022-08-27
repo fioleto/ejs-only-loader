@@ -1,0 +1,72 @@
+# General
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+.apdisk
+
+# etc
+/temporary
+/logs
+
+# ST3
+*.sublime-workspace
+*.sublime-project
+
+# VS CODE
+*.code-workspace
+
+# IDEA
+/.idea/
+/tmp/
+/bin/
+*.test
+*.swp
+
+# Nohup
+nohup.out
+
+# Node
+node_modules/*
+
+# Xcode (from gitignore.io)
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# CocoaPod
+Pods/*
+
+# others
+!.gitkeep
+
+*.tsbuildinfo
+
+dist/*
+!dist/.gitkeep
+
+lib/*
+!lib/.gitkeep
+

@@ -1,0 +1,17 @@
+{
+	"exclude": [
+		"node_modules",
+		"temporary/**/*"
+	],
+	"compilerOptions": {
+		"target": "ES2017",
+		"module": "commonjs",
+		"rootDir": "./src/",
+		"outDir": "./dist/",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strictPropertyInitialization": false,
+		"incremental": false
+	}
+}

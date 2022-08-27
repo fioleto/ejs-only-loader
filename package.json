@@ -1,0 +1,34 @@
+{
+  "name": "ejs-only-loader",
+  "version": "0.0.0",
+  "description": "EJS loader for webpack",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fioleto/ejs-only-loader.git"
+  },
+  "author": "fioleto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fioleto/ejs-only-loader/issues"
+  },
+  "homepage": "https://github.com/fioleto/ejs-only-loader#readme",
+  "devDependencies": {
+    "@types/ejs": "^3.1.1",
+    "@types/lodash.merge": "^4.6.7",
+    "@types/node": "^18.7.13",
+    "@types/webpack": "^5.28.0",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "lodash.merge": "^4.6.2"
+  }
+}
