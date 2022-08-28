@@ -1,6 +1,7 @@
 import {WebpackThis} from "./interfaces/WebpackThis";
 import {parseOption} from "./lib/parseOption";
 import {render} from "ejs";
+import {resolve} from "path";
 
 module.exports = function(
 	this: WebpackThis,
@@ -15,7 +16,10 @@ module.exports = function(
 			source,
 			options.ejsData,
 			{
-				rmWhitespace: options.enableRmWhitespace
+				rmWhitespace: false,
+				root: resolve(
+					this.resourcePath
+				)
 			}
 		);
 
@@ -27,8 +31,7 @@ module.exports = function(
 	}catch(error: unknown){
 		if(error instanceof Error){
 			this.callback(
-				error,
-				""
+				error
 			);
 			return;
 		}
@@ -36,8 +39,7 @@ module.exports = function(
 		this.callback(
 			new Error(
 				String(error)
-			),
-			""
+			)
 		);
 		return;
 	}
