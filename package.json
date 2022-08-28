@@ -6,6 +6,10 @@
   "directories": {
     "lib": "lib"
   },
+  "files": [
+    "./dist/",
+    "tsconfig.json"
+  ],
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc"
