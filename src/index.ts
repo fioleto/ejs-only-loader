@@ -1,14 +1,15 @@
 import {WebpackThis} from "./interfaces/WebpackThis";
 import {parseOption} from "./lib/parseOption";
 import {render} from "ejs";
-import {resolve} from "path";
+import {resolve, parse} from "path";
 
 module.exports = function(
 	this: WebpackThis,
 	source: string
 ): void{
 	try{
-		const options = parseOption(
+		const options = parseOption.call(
+			this,
 			this.getOptions()
 		);
 
@@ -17,9 +18,14 @@ module.exports = function(
 			options.ejsData,
 			{
 				rmWhitespace: false,
-				root: resolve(
+				filename: resolve(
 					this.resourcePath
-				)
+				),
+				root: parse(
+					resolve(
+						this.resourcePath
+					)
+				).dir
 			}
 		);
 
