@@ -13,12 +13,13 @@ npm i -D git+https://github.com/fioleto/ejs-only-loader.git
 
 ## Usege
 
-```json
-// webpack.json
+Rules section of webpack.config.js
+
+```javascript
 {
 	loader: 'ejs-only-loader',
 	options: {
-		ejsData: {} // data that pass over ejs render as argument.
+		ejsData: {}
 }
 ```
 
